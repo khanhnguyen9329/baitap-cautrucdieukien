@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--// doanh số : < 5000  = 2% ; < 10000$  = 4% ;-->
+<!--// < 15000$  = 7 % ; < 20000$ = 10 % ; > 200000 = 15%-->
+    <table>
+        <tr>
+            <td>Tiền doanh số </td>
+            <td> <input type="text" id="money" > $ </td>
+            <td> <button onclick="abc()"> kết quả</button> </td>
+        </tr>
+        <tr>
+            <td>Tiền  <img src="https://hoahongthanglong.com/wp-content/uploads/2021/02/IMG_1741.jpg" style="width: 30px" height="30px"> </td>
+            <td><input type="text" id="money2"> $ </td>
+        </tr>
+    </table>
+
+<script>
+    function abc(){
+    let money = +document.getElementById("money").value;
+
+     let result = "";
+
+     if (money < 1000){
+        result = ("có cái nịt")
+    }else if (money < 5000) {
+         result =" số tiền hoa hồng là"+" " +(2* money /100);
+
+     } else if ( money  < 10000 ){
+         result = " số tiền hoa hồng là"+" " + (5*money/100);
+
+     } else if (money <= 20000 ){
+         result = " số tiền hoa hồng là"+" " + (10* money/100);
+
+     } else if (money > 20000 ){
+         result= " số tiền hoa hồng là"+" " + (15* money /100);
+
+     } else {
+         result= " mời bạn nhập lại "
+     }
+        document.getElementById("money2").value = result +" "+ "$"
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let test = parseInt(prompt("nhập điểm kiểm tra giữa kì"));
+    let minitest = parseInt(prompt("nhập điểm kiểm tra cuối kì"));
+    let result = (test + minitest)/2
+    if (result < 5){
+        alert( result+"thì"+"tạch rồi")
+
+    }else if (result <= 6){
+        alert(result+"Trung bình")
+
+    }else if (result <= 8){
+        alert(result+"khá")
+
+    }else if (result <= 10){
+        alert(result+"giỏi")
+    }else {
+        alert("sai cú pháp")
+    }
+
+
+
+</script>
+
+</body>
+</html>
